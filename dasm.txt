@@ -1,0 +1,7 @@
+dasm <file>.asm -f3 -v0 -o<file>.bin
+
+Signifcado das flags:
+
+-f  --> formato do output de 1 a 3 (default e 1)
+-v  --> verbosidade de 1 a 4 (default e 0)
+-o  --> nome do arquivo de saida (default: a.out)
