@@ -15,9 +15,10 @@ Start:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	lda #0	  ; A = 0
 	ldx #$FF  ; X = #$FF
+	sta $FF	  ; zeramos a posição FF manualmente antes de decrementar para FE
 MemLoop:
-	sta $0,X     ; Armazene o valor de A no endereco $0 + X	
 	dex	     ; X-- (dex = decrement X)
+	sta $0,X     ; Armazene o valor de A no endereco $0 + X	
 	bne MemLoop  ; Loop ate X igual 0 (ate a flag zero ser limpa)
 
 
