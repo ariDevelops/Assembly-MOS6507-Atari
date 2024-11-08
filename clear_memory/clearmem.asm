@@ -4,7 +4,7 @@
 	org $F000 ; define a origem do codigo no addr $F000 (zero)
 
 Start:
-	sei	  ; Disable interrupts (desabilita instruções)	
+	sei	  ; Disable interrupts (desabilita interrupções)	
 	cld	  ; Disable the BCD decimal math mode (desliga modo decimal)
 	ldx #$FF  ; carrega o registrador X com valor hex literal (0xFF)
 	txs	  ; Transfere o Valor no reg X para o reg (S)tackPointer
