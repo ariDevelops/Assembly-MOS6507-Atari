@@ -1,4 +1,6 @@
 ./*.pdf
 ./*.pl
 ./**/*.pl
+./*.bin
+./**/*.bin
 tabela.txt
