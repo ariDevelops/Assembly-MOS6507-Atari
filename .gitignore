@@ -4,5 +4,7 @@
 ./*.bin
 ./**/*.bin
 ./**/*.h
-./*.h
+./**.h
+colorbg/**.h
+
 tabela.txt
